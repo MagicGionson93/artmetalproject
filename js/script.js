@@ -47,12 +47,12 @@ allLink.forEach(function (link) {
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    if (href === "/")
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+    // if (href === "/")
+    //   e.preventDefault();
+    //   window.scrollTo({
+    //     top: 0,
+    //     behavior: "smooth",
+    //   });
     // console.log(href);
 
     if (href === "#" || href.startsWith("#")) {
