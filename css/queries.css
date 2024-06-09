@@ -16,6 +16,8 @@ Instead 1 rem = 1em = 16px
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  
 }
 
 @media (max-width: 75em) {
@@ -52,6 +54,7 @@ Instead 1 rem = 1em = 16px
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
+  
 }
 
 @media (max-width: 59em) {
@@ -76,6 +79,10 @@ Instead 1 rem = 1em = 16px
 
   .hero-img {
     width: 60%;
+  }
+
+  .section-how{
+    text-align: center;
   }
 
   .delivered-meals {
@@ -154,8 +161,10 @@ Instead 1 rem = 1em = 16px
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
+    overflow-y: hidden;
     visibility: visible;
     transform: translateX(0);
+    z-index: 99;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {

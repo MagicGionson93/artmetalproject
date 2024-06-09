@@ -56,7 +56,7 @@
 }
 
 .logo {
-  height: 9.6rem;
+  height: 8.4rem;
 }
 
 .main-nav-list {
@@ -86,7 +86,7 @@
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
+  padding: 1.2rem 1.6rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
@@ -147,9 +147,7 @@
 
 .section-hero {
   background-color: rgb(51, 48, 55);
-  background-image: linear-gradient(to right bottom, rgba(51, 48, 55, 0.856), rgb(92, 88, 97)), url(../img/hero.jpg);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-image: linear-gradient(to right bottom, rgba(51, 48, 55, 0.856), rgba(82, 114, 255, 0.589)), url(../img/hero.jpg);
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -174,7 +172,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
-  /* background-color: purple; */
 }
 
 .hero-description {
@@ -742,7 +739,7 @@
 
 textarea {
   width: 100%;
-  height: 9.6rem;
+  height: 12rem;
   padding: 1.2rem;
   font-size: 1.7rem;
   font-family: inherit;

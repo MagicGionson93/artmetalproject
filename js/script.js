@@ -15,17 +15,17 @@ btnNav.addEventListener("click", function () {
   if (header.classList.value.includes("nav-open")) {
     header.classList.remove("nav-open");
   } else {
-    header.classList.add("nav-open");
+    header.classList.add("nav-open");    
   }
 });
 
 // Sticky Navigation
 
-const sectionHeroElement = document.querySelector(".section-hero");
+let sectionHeroElement = document.querySelector(".section-hero");
 const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    if (!ent.isIntersecting) {
+    if (!ent.isIntersecting && !header.classList.value.includes("nav-open")) {
       document.body.classList.add("sticky");
     } else {
       document.body.classList.remove("sticky");
