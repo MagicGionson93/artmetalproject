@@ -174,6 +174,20 @@
   align-items: center;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.hero-text-box{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  
+}
+
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
@@ -329,6 +343,7 @@
 .section-how {
   padding: 9.6rem 0;
   grid-template-columns: repeat(2, 1fr);
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .step-number {
