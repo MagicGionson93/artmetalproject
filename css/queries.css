@@ -16,7 +16,6 @@ Instead 1 rem = 1em = 16px
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-
   
 }
 
@@ -75,10 +74,6 @@ Instead 1 rem = 1em = 16px
 
   .hero-description {
     margin-bottom: 2.4rem;
-  }
-
-  .hero-img {
-    width: 60%;
   }
 
   .section-how{
@@ -184,6 +179,10 @@ Instead 1 rem = 1em = 16px
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .step-img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 44em) {
@@ -248,9 +247,6 @@ Instead 1 rem = 1em = 16px
     padding: 0 3.2rem;
   }
 
-  .hero-img {
-    width: 85%;
-  }
 
   .logos img {
     height: 1.2rem;
