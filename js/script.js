@@ -1,13 +1,3 @@
-// For using this on you have to add onClick=addOpen to the button
-// function addOpen() {
-//   let openNav = document.querySelector("header");
-//   if (openNav.className === "header") {
-//     openNav.className += " nav-open";
-//   } else {
-//     openNav.className = "header";
-//   }
-// }
-
 const btnNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 
@@ -46,15 +36,6 @@ allLink.forEach(function (link) {
   link.addEventListener("click", function (e) {
     const href = link.getAttribute("href");
 
-    // Scroll back to top
-    // if (href === "/")
-    //   e.preventDefault();
-    //   window.scrollTo({
-    //     top: 0,
-    //     behavior: "smooth",
-    //   });
-    // console.log(href);
-
     if (href === "#" || href.startsWith("#")) {
       e.preventDefault();
       const selectClass = document.querySelector(href);
@@ -65,7 +46,6 @@ allLink.forEach(function (link) {
   });
 });
 
-//Select current year
 
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
@@ -98,3 +78,4 @@ const items = document.querySelectorAll(".step-text-box,.step-img-box");
 for (const item of items) {
   observer2.observe(item);
 }
+

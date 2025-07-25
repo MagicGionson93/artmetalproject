@@ -16,7 +16,6 @@ Instead 1 rem = 1em = 16px
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
 
 @media (max-width: 75em) {
@@ -53,7 +52,11 @@ Instead 1 rem = 1em = 16px
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
-  
+
+    .grid--footer {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2.4rem;    
+  }
 }
 
 @media (max-width: 59em) {
@@ -76,7 +79,7 @@ Instead 1 rem = 1em = 16px
     margin-bottom: 2.4rem;
   }
 
-  .section-how{
+  .section-how {
     text-align: center;
   }
 
@@ -180,7 +183,7 @@ Instead 1 rem = 1em = 16px
     font-size: 3rem;
   }
 
-  .step-img{
+  .step-img {
     width: 100%;
   }
 }
@@ -203,11 +206,6 @@ Instead 1 rem = 1em = 16px
   .pricing-plan {
     width: 100%;
   }
-
-  .grid--footer {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
   .logo-col,
   .adress-col {
     grid-column: span 3;
@@ -217,6 +215,24 @@ Instead 1 rem = 1em = 16px
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-col {
+    align-items: center;
+  }
+
+  .adress-col,
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -246,7 +262,6 @@ Instead 1 rem = 1em = 16px
   .hero {
     padding: 0 3.2rem;
   }
-
 
   .logos img {
     height: 1.2rem;
@@ -284,5 +299,29 @@ Instead 1 rem = 1em = 16px
   .cta-img-box {
     height: 32rem;
     grid-row: 1;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-col {
+    align-items: center;
+  }
+
+  .adress-col,
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
